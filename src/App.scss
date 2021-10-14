@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+  background: #485b6e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.details {
+  background: #eee;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: auto;
+  height: 100%;
+  float: left;
+  transition: all 0.8s;
+  -moz-transition: all 0.8s;
+}
+
+.load {
+  height: 50vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Open Sans", sans;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card {
+  background-color: #eee;
+  perspective: 1000px;
+  width: 46%;
+  height: 89%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.4s;
+}
+
+.card-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding-left: 20px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.front,
+.card-back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #eee;
+  color: black;
+  height: 300px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3 {
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #000;
+  }
+
+  h6,
+  h5 {
+    margin: 0px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    bottom: 40px;
+  }
+
+  h6 {
+    color: #e45437;
+  }
+
+  h5 {
+    color: #19bf8b;
+  }
+}
+
+.card-back {
+  background: #d90e0e;
+  color: white;
+  transform: rotateY(180deg);
+
+  h3 {
+    padding: 0px 0px 0px 10px;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #fff;
+  }
+
+  h4 {
+    padding: 0px 0px 15px 10px;
+    margin-top: -10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    width: 100%;
+  }
+
+  p {
+    padding: 0px 0px 0px 10px;
+  }
+}
