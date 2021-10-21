@@ -1,0 +1,142 @@
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: #eee;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+img {
+  // height: inherit;
+  width: auto;
+  height: 100%;
+  float: left;
+}
+
+h1 {
+  font-family: "Open Sans", sans;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card {
+  background-color: #eee;
+  color: rgba(255, 255, 255, 1);
+}
+
+.card-inner {
+  width: 300px;
+  height: 300px;
+}
+
+.card-front {
+  background: #fff !important;
+  color: #1890ff;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 0 20px;
+  h3 {
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #000;
+  }
+
+  h6,
+  h5 {
+    margin: 0px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    bottom: 40px;
+    font-weight: 550;
+  }
+
+  h6 {
+    color: #e45437;
+  }
+
+  h5 {
+    color: #19bf8b;
+  }
+}
+
+.card-back {
+  background: #1890ff !important;
+  color: white;
+  height: 300px;
+
+  h3 {
+    padding: 12px 0px 0px 10px;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #fff;
+  }
+
+  h4 {
+    padding: 0px 0px 15px 12px;
+    margin-top: -10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    font-weight: 700;
+  }
+
+  p {
+    padding: 5px 0px 0px 12px;
+    font-weight: 550;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin-top: 25%;
+    height: 600px;
+    width: 300px;
+  }
+
+  .details {
+    width: 300px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    height: 280px;
+    width: 300px;
+  }
+
+  .card,
+  .card-front,
+  .card-back {
+    height: 280px;
+    width: 302px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    margin-top: 35%;
+  }
+}

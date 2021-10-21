@@ -1,0 +1,41 @@
+.header-content {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    h1 {
+      color: #1890ff;
+      letter-spacing: 1px;
+    }
+  }
+
+  .header-func {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    button {
+      border: none;
+      background: rgb(248, 248, 248);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #1890ff;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    display: block;
+    .header-func {
+      display: flex;
+      justify-content: space-between;
+      span {
+        margin-right: 20px;
+      }
+    }
+  }
+}
